@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width" initial-scale = "1.0">
+        <title>Cake House</title>
+        <style>
+        body{
+            margin: 0;
+            padding: 50px;
+            font-family: Arial, sans-serif;
+            background-size: cover;
+        }
+        header {
+            background-size: cover;
+            padding: 20px;
+            text-align: center;
+            color: white;
+            top: 0;
+            z-index: 1000;
+        }
+         header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 5px #000;
+        }
+        .btn{
+            border-radius: 25px;
+            padding: 10px 20px;
+            background-color: dodgerblue;
+            color: #000;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background-color: white;
+    
+        }
+        nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background-color: #06a5fa;
+            text-shadow: #000;
+            font-family: Arial, Helvetica, sans-serif, sans-serif;
+          
+        }
+        nav ul {
+            list-style: none;
+            text-align: center;
+        }
+        nav li {
+            display: inline;
+            margin: 1rem;
+        }
+        nav a {
+            text-decoration: rgb(21, 123, 213);
+            color: #171717;
+            font-weight: bold;
+        }
+        .products { 
+            padding: 40px 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+        .card {
+            background: #faf8f8;
+            width: 300px;
+            border-radius: 15px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+        
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-info {
+            padding: 15px;
+        }
+        
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        form input, form textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+
+        form button {
+            padding: 12px;
+            background: #ff7f7f;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background: #ef0404;
+        }
+        
+
+        footer {
+            background-color: #ffccbc;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+            margin-top: 30px;
+        }
+       </style> 
+    </head>
+    <body>
+        
+        <nav>
+            <div class="logo">Cake House</div>
+            <div class="menu-toggle" onclick="toggleMenu()"></div>
+            <ul id="menu">
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#Cakes">Cakes</a></li>
+                <li><a href="#About us">About us</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>            
+        </nav>
+        <header>
+        <section id="Home">
+            <h1>Welcome to Cake House</h1>
+            <p>Delicious handmade cakes.</p>
+            <button class="btn">Order Now</button>
+        </section>
+        </header>
+        
+        <section id="Cakes">
+        <section class="products">
+            <div class="card">
+                <img src="C:\Users\gurup\Downloads\chocotruffle.jpg" alt="Chocotruffle">
+                <div class="card-content">
+                    <h1>Choco Truffle</h1>
+                    <p>Dark, rich and irresistible. Our bestseller chocolate cake.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="C:\Users\gurup\Downloads\redvelvet.jpg" alt="Red velvet">
+                <div class="card-content">
+                    <h2>Red Velvet</h2>
+                    <p>Classic red velvet topped with vanilla cream cheese frosting</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="C:\Users\gurup\Downloads\strawberry.jpg" alt="Delight">
+                <div class="card-content">
+                    <h3>Strawberry Delight</h3>
+                    <p>Fresh strawberries layered with fluffy sponge and cream.</p>
+                </div>
+            </div><div class="card">
+                <img src="C:\Users\gurup\Downloads\butter.jpg" alt="butterscotch">
+                <div class="card-content">
+                    <h3>butterscotch</h3>
+                    <p>A rich and creamy delight, our butterscotch cake blends smooth caramel flavor with soft, moist layers for a truly indulgent treat.</p>
+                </div>
+            </div><div class="card">
+                <img src="C:\Users\gurup\Downloads\choco.jpg" alt="lava">
+                <div class="card-content">
+                    <h3>Choco lava</h3>
+                    <p>Our Choco Lava Cake is a warm, gooey dessert bursting with rich molten chocolate in every bite.
+</p>
+                </div>
+            </div><div class="card">
+                <img src="C:\Users\gurup\Downloads\cake.jpg" alt="Brownie">
+                <div class="card-content">
+                    <h3>Brownie cake</h3>
+                    <p>Fresh strawberries layered with fluffy sponge and cream.</p>
+                </div>
+            </div>
+        </section>
+        </section>
+        <section id="About us">
+            <h1>About us</h1>
+            <p1>Welcome to [Your Cake Shop Name], where every cake is a celebration!
+            We specialize in creating handcrafted, delicious cakes and desserts made with the finest ingredients and a whole lot of love. Whether it’s a birthday, wedding, anniversary, or just a sweet craving, our cakes are baked fresh daily to bring joy to every occasion.
+            From classic flavors to custom designs, we believe every cake should be as unique and special as the moments they celebrate. Come taste the difference — because happiness is homemade!  </p1>
+
+        </section>
+        <section  id="contact">
+            <h2 style="text-align:center;">Contact Us</h2>
+            <form>
+                <input type="text" placeholder="Your Name" required />
+                <input type="email" placeholder="Your Email" required />
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+        
+        <footer>
+            &copy; 2025 Cake Bliss. All rights reserved. | Follow us on Instagram @cakebliss
+        </footer>
+
+
+    </body>
+</html>
